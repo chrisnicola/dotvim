@@ -1,0 +1,9 @@
+[submodule "bundle/VimRepressed"]
+	path = bundle/VimRepressed
+	url = https://github.com/jslatts/VimRepressed.git
+[submodule "bundle/Vimpress"]
+	path = bundle/Vimpress
+	url = https://github.com/vim-scripts/Vimpress.git
+[submodule "bundle/blogit"]
+	path = bundle/blogit
+	url = https://github.com/vim-scripts/blogit.vim.git
