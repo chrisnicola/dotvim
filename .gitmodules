@@ -1,6 +1,3 @@
-[submodule "bundle/blogit"]
-	path = bundle/blogit
-	url = https://github.com/vim-scripts/blogit.vim.git
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = https://github.com/mattn/gist-vim.git
@@ -61,3 +58,9 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/vimfluence"]
+	path = bundle/vimfluence
+	url = https://github.com/orlandov/vimfluence.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
