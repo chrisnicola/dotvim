@@ -67,3 +67,6 @@
 [submodule "bundle/jsbeutify"]
 	path = bundle/jsbeutify
 	url = https://github.com/vim-scripts/jsbeautify.git
+[submodule "bundle/vimerl"]
+	path = bundle/vimerl
+  url = https://github.com/oscarh/vimerl.git
