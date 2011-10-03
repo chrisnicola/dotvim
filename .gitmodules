@@ -88,3 +88,9 @@
 [submodule "bundle/vim-autoclose"]
 	path = bundle/vim-autoclose
 	url = https://github.com/Townk/vim-autoclose.git
+[submodule "bundle/ultrablog"]
+	path = bundle/ultrablog
+	url = https://github.com/vim-scripts/UltraBlog.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git

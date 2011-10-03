@@ -20,5 +20,8 @@ if has("autocmd")
   filetype plugin indent on
 endif 
 
+map <leader>ss :setlocal spell!<cr>
+
 let VIMPRESS = [{'username':'chrisn', 'blog_url':'http://lucisferre.net/'}]
 
+let ub_blog = {'login_name':'chrisn', 'xmlrpc':'http://lucisferre.net/xmlrpc.php', 'db':'~/.vim/UltraBlog.db' }
