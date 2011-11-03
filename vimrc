@@ -18,6 +18,3 @@ if has("autocmd")
   filetype plugin indent on
 endif 
 
-let blogit_unformat='pandoc --from=html --to=markdown --reference-links'
-let blogit_format='pandoc --from=markdown --to=html --no-wrap'
-
