@@ -11,8 +11,9 @@ set autoindent
 set expandtab
 syntax on
 
-colorscheme solarized
 set background=dark
+let g:solarized_termcolors=16
+colorscheme solarized
 set listchars=tab:▸\ ,eol:¬
 set guifont="Meslo LG S":h13.00
 
