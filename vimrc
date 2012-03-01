@@ -22,3 +22,6 @@ if has("autocmd")
 endif 
 
 map <leader>ss :setlocal spell!<cr>
+
+let g:CommandTMaxHeight = 15
+set wildignore+=*.o,*.obj,.git,*.pyc,log,tmp,*.lock
