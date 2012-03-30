@@ -1,5 +1,9 @@
-" Required plugin workarounds
+" Plugin Options
 let g:AutoPairsShortcutFastWrap = '<C-e>'
+
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=1
+let g:syntasttic_auto_loc_list=1
 
 " General settings
 set nocompatible
@@ -43,8 +47,3 @@ set guifont=Meslo\ LG\ S:h13.00
 map <C-f>     :NERDTreeToggle<CR>
 map <leader>ss :setlocal spell!<cr>
 map <leader>sc :SyntasticCheck<CR>
-
-" Sytastic Options
-let g:syntastic_check_on_open=1
-let g:syntastic_auto_jump=1
-let g:syntasttic_auto_loc_list=1
