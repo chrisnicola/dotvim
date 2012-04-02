@@ -2,7 +2,6 @@ let mapleader=','
 let g:mapleader=','
 " Plugin Options
 let g:AutoPairsShortcutFastWrap = '<C-e>'
-
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=1
 let g:syntasttic_auto_loc_list=1
@@ -17,7 +16,6 @@ set tabstop=2
 set shiftwidth=2
 set smarttab
 set expandtab
-set cindent
 set autoindent
 set ruler
 set backspace=indent,eol,start
@@ -31,7 +29,6 @@ set lazyredraw
 set ttyfast
 let g:CommandTMaxHeight = 20
 set wildignore+=*.o,*.obj,.git,*.pyc,log,tmp,*.jpg,*.png,*.gif
-set clipboard+=unnamed
 set title
 " We dont need no stinkin' backup or swap files. We use git!
 set nobackup
@@ -39,6 +36,7 @@ set noswapfile
 " Improve tab completion, works more like bash completion this way
 set wildmenu
 set wildmode=list:longest
+set clipboard=unnamed
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -48,6 +46,7 @@ filetype plugin indent on
 " Style options
 set background=dark
 colorscheme solarized
+"colorscheme vividchalk
 set listchars=tab:▸\ ,eol:¬
 set list
 set guifont=Meslo\ LG\ S:h13.00
