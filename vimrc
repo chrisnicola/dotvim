@@ -1,3 +1,5 @@
+let mapleader=','
+let g:mapleader=','
 " Plugin Options
 let g:AutoPairsShortcutFastWrap = '<C-e>'
 
@@ -28,8 +30,15 @@ set hidden
 set lazyredraw
 set ttyfast
 let g:CommandTMaxHeight = 20
-set wildignore+=*.o,*.obj,.git,*.pyc,log,tmp,*.lock
+set wildignore+=*.o,*.obj,.git,*.pyc,log,tmp,*.jpg,*.png,*.gif
 set clipboard+=unnamed
+set title
+" We dont need no stinkin' backup or swap files. We use git!
+set nobackup
+set noswapfile
+" Improve tab completion, works more like bash completion this way
+set wildmenu
+set wildmode=list:longest
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -44,6 +53,19 @@ set list
 set guifont=Meslo\ LG\ S:h13.00
 
 " Custom shortcuts
-map <C-f>     :NERDTreeToggle<CR>
-map <leader>ss :setlocal spell!<cr>
-map <leader>sc :SyntasticCheck<CR>
+map <C-f>         :NERDTreeToggle<CR>
+map <leader>ss    :setlocal spell!<cr>
+map <leader>sc    :SyntasticCheck<CR>
+map <C-t>         :CommandTFlush<CR> 
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+" Format paragraphs quickly
+vmap Q gq
+nmap Q gqap
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+" Sudo save me a file (and make me a sandwich)
+cmap w!! w !sudo tee % >/dev/null
