@@ -2,11 +2,11 @@ let mapleader=','
 let g:mapleader=','
 " Plugin Options
 let g:AutoPairsShortcutFastWrap = '<C-e>'
-let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=1
-let g:syntasttic_auto_loc_list=1
+let g:syntastic_auto_loc_list=1
 
 " General settings
+set autoread
 set nocompatible
 set term=xterm-256color
 set t_Co=256
@@ -44,7 +44,7 @@ syntax on
 filetype plugin indent on
 
 " Style options
-set background=dark
+set background=light
 colorscheme solarized
 "colorscheme vividchalk
 set listchars=tab:▸\ ,eol:¬
@@ -68,3 +68,4 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Sudo save me a file (and make me a sandwich)
 cmap w!! w !sudo tee % >/dev/null
+map <leader>rr    :checktime<CR>
