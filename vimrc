@@ -6,6 +6,7 @@ let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 
 " General settings
+set hls
 set autoread
 set nocompatible
 set term=xterm-256color
@@ -55,9 +56,9 @@ set guifont=Meslo\ LG\ S:h13.00
 map <C-f>         :NERDTreeToggle<CR>
 map <leader>ss    :setlocal spell!<cr>
 map <leader>sc    :SyntasticCheck<CR>
-map <C-t>         :CommandTFlush<CR> 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+map <space> :noh<cr>
 " Format paragraphs quickly
 vmap Q gq
 nmap Q gqap
