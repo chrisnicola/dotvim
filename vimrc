@@ -11,7 +11,6 @@ set encoding=utf-8
 set hls
 set autoread
 set nocompatible
-set term=xterm-256color
 set t_Co=256
 set hidden
 set number
