@@ -112,3 +112,12 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-numbers"]
+	path = bundle/vim-numbers
+	url = git://github.com/myusuf3/numbers.vim.git
+[submodule "bundle/vim-tagbar"]
+	path = bundle/vim-tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = git://github.com/Lokaltog/vim-powerline.git

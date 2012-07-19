@@ -4,8 +4,10 @@ let g:mapleader=','
 let g:AutoPairsShortcutFastWrap = '<C-e>'
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
+let g:Powerline_symbols = 'fancy'
 
 " General settings
+set encoding=utf-8
 set hls
 set autoread
 set nocompatible
@@ -39,6 +41,7 @@ set wildmenu
 set wildmode=list:longest
 set clipboard=unnamed
 
+
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
@@ -69,4 +72,5 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Sudo save me a file (and make me a sandwich)
 cmap w!! w !sudo tee % >/dev/null
-map <leader>rr    :checktime<CR>
+map <leader>r  :checktime<CR>
+nmap <leader>t :TagbarToggle<CR>
